@@ -1,0 +1,114 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    /* hex, rgb hsa rgba name */
+    color: #22577e;
+    /* COME BACK TO */
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* NAV */
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 10% - relative vs 10vh */
+    height: 10vh;
+    padding: 0 20px;
+  }
+  
+  nav ul {
+    width: 50%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* HEADER */
+  
+  .highlight {
+    color: #95d1cc;
+  }
+  
+  #hero {
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #hero p {
+    margin: 40px;
+  }
+  
+  .secondary-text {
+    color: #5584ac;
+    font-size: 14px;
+  }
+  
+  .button {
+    background-color: #22577e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+
+  main {
+    background-color: rgb(184, 247, 239);
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+
+  .card {
+      background-color: white;
+      width: 300px;
+      height: 400px;
+      border: 1px solid white;
+      border-radius: 10px;
+      text-align: center;
+      justify-content: center;
+      padding: 20px;
+      margin: 50px;
+  }
+
+  /* .card2 {
+    border:green 2px solid;
+    background-color: white;
+    width: 300px;
+    height: auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 50px;
+   
+  } */
+
+  .about-us {
+        text-align: center;
+        height: 80px;
+        padding: 40px;
+        background-color: rgb(184, 247, 239)
+  }
+
+  .card h3 {
+      text-align: start;
+  }
+
+  p {
+      text-align: start;
+  }
+
+
