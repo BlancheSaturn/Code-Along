@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    border: 2px red solid;
+    height: 500px;
+    width: 500px;
+}
