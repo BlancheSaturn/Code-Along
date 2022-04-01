@@ -19,11 +19,12 @@
     border: none;
 
     &--form {
-        width: 100px;
+        width: 260px;
+        height: 60px;
         background-color: $color-primary-light;
+        align-items: center;
     }
-
-    &--secondary {
+    &--end {
         background-color: unset;
         border: 2px solid $color-primary;
         color: $color-primary;
@@ -61,34 +62,29 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    width: 300px;
+    height: 250px;
 
 .form__input {
     margin-bottom: 20px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px 15px;
 
     }
 }
 
 
-.outro {
+.end {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .outro__heading {
+    &__heading {
         font-family: $font-display;
         font-size: 30px;
         margin-bottom: 20px;
     }
 
-}
-
-    .footer {
-        background-color: $color-primary;
-        display: flex;
-        justify-content: space-between;
-        padding: 20px 40px;
-
-        &__text {
-            color: $color-white;
-            vertical-align: bottom;
-        }
-    } 
+} 

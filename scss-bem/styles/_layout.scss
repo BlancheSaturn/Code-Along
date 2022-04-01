@@ -24,9 +24,23 @@
     align-items: center;
 }
 
-.outro-container {
+.end-container {
     height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.footer {
+    background-color: $color-primary;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+
+    &__text {
+        color: $color-white;
+        vertical-align: bottom;
+    }
+
 }
