@@ -1,0 +1,26 @@
+
+// BASE -> SET UP ->VARIABLES & RESET 
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital@1&display=swap');
+
+$font-body:"Roboto", sans-serif;
+$font-display:"Dancing Script", sans-serif;
+
+$color-primary: #28527a;
+$color-primary-light: #55a5f0;
+$color-secondary: #f0a500;
+$color-black: #333333;
+$color-white: #fafafa;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-body;
+    color: $color-black;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}

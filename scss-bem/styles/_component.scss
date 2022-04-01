@@ -1,0 +1,94 @@
+@use "_base.scss" as *;
+
+// COMPONENTS -> INDIVIDUAL ITEMS / ELEMENTS
+
+.logo {
+    font-family: $font-display;
+    font-size: 20px;
+    color: $color-white;
+}
+
+.button {
+    display: block;
+    width: 100px;
+    background-color: $color-secondary;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: $color-white;
+    border: none;
+
+    &--form {
+        width: 100px;
+        background-color: $color-primary-light;
+    }
+
+    &--secondary {
+        background-color: unset;
+        border: 2px solid $color-primary;
+        color: $color-primary;
+    }
+}
+
+.intro {
+    text-align: center;
+
+    .intro__heading {
+        color: $color-primary;
+        font: 50px;
+    }
+
+    .intro__sub-heading {
+        font-family: $font-display;
+        font-size: 25px;
+        margin:  20px 0;
+    }
+
+    .intro__button {
+        margin: 0 auto;
+    }
+}
+
+.wave {
+    vertical-align: top;
+    fill: $color-primary;
+    fill-opacity: 1;
+}
+
+.form {
+    background-color: $color-white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+.form__input {
+    margin-bottom: 20px;
+
+    }
+}
+
+
+.outro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .outro__heading {
+        font-family: $font-display;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+}
+
+    .footer {
+        background-color: $color-primary;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 40px;
+
+        &__text {
+            color: $color-white;
+            vertical-align: bottom;
+        }
+    } 

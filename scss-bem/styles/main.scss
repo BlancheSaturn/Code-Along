@@ -1,0 +1,6 @@
+//MAIN BRINGS THE FILES TOGETHER
+// _file.scss -> PARTIAL -> PART OF SOMETHING 
+@use "./_base.scss";
+@use"./_component.scss";
+@use"./_layout.scss";
+

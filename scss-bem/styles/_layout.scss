@@ -1,0 +1,32 @@
+@use "_base.scss" as *;
+
+.navigation {
+    height: 10vh;
+    background-color: $color-primary;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    height: 50vh;
+    background-color: $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outro-container {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
