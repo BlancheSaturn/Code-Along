@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>Simple Input</h1>
+<input id="myInputAge"/>
+<h2 id="result"></h2>
+<button onclick="(function(){
+    const age = document.getElementById('myInputAge').value;
+    console.log(age)
+    if (age > 18) {
+        document.getElementById('result').innerHTML = 'You can vote';
+    } else {
+        document.getElementById('result').innerHTML = 'You can not vote';
+    }
+})();">Click Here</button> -->
+
+<!-- Challenge Extension (Front end for last switch case) -->
+<!-- Not working -->
+
+<h1>Vegetable Prices</h1>
+<select id="myVegetable" onchange="(function(){
+    const vegetable = document.getElementById('myVegetable').value;
+    console.log(vegetable)
+    if (vegetable === 'carrot' || vegetable === 'potatoes') {
+        document.getElementById('result2').innerHTML = '£2.30p';
+    } else if (vegetable === 'brocolli') {
+        document.getElementById('result2').innerHTML = '£1.65p';
+    } else if (vegetable === 'asparagus') {
+        document.getElementById('result2').innerHTML = '£2.00';
+    } else {
+        console.log ('Not available today');
+    }  
+})(); ">
+    <option value=""></option>
+    <option value="potatoes">Potatoes</option>
+    <option value="carrot">Carrot</option>
+    <option value="brocolli">Brocolli</option>
+    <option value="asparagus">Asparagus</option>
+</select>
+<h2 id="result2"></h2>
+    <option onchange=""></option>
+</body>
+</html>
