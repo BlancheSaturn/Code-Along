@@ -83,4 +83,55 @@ const calculateSupply = (currentAge, amountPerDay) => {
 calculateSupply(35, 5);
 calculateSupply(45, 2);
 calculateSupply(67, 11);
+
+// **The Temperature Converter**
+// It's hot out! Not. Let's make a converter based on the steps here.
+// Create a function called celsiusToFahrenheit:
+// Store a celsius temperature into a variable.
+// Convert it to fahrenheit and output "X°C is Y°F".
+// Create a function called fahrenheitToCelsius:
+// Now store a fahrenheit temperature into a variable.
+// Convert it to celsius and output "X°F is Y°C."
  
+const celsiusToFahrenheit = (celsius) => {
+    const convertcelsiusToFahrenheit = (celsius * 9) /5 + 32;
+    console.log(celsius + '°C is ' + convertcelsiusToFahrenheit + '°F')
+}
+celsiusToFahrenheit(23);
+
+// **The Puppy Age Calculator**
+// You know how old your dog is in human years, but what about dog years? Calculate it!
+// Write a function named calculateDogAge that:
+// takes 1 argument: your puppy's age.
+// calculates your dog's age based on the conversion rate of 1 human year to 7 dog years.
+// outputs the result to the screen like so: "Your doggie is NN years old in dog years!"
+// Call the function three times with different sets of values.
+// Bonus: Add an additional argument to the function that takes the conversion rate of human to dog years.
+
+const calculatePuppyAge = (age) => {
+    const puppyAge = age * 7;
+    console.log('Your puppy is ' + puppyAge + ' years old in dog years')
+}
+calculatePuppyAge(2);
+calculatePuppyAge(5);
+calculatePuppyAge(7);
+
+// CAESAR CIPHER ENCRYPTOR
+// try to develop a Caesar cipher encryptor
+
+// Given a non-empty string of lowercase letters and a non negative integer representing a key, 
+// write a function that returns a new string obtaining by shifting every letter in the input string by k positions in the alphabet, 
+// where k is the key
+// Of course letters should "wrap" so if you have the letter "z" shifted by 1 it will return "a"
+
+// const inputText = "xyz"
+// const key = 2
+
+const caesarEncryptor = (inputText, key) => {
+    const alphabet = ['a','b','c','d','e','f','g','h','i','j','k',
+    'l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',]
+    const cipher = (inputText - key);
+    console.log(cipher)
+// Maybe I have to use for loop to iterate between the letters
+}
+caesarEncryptor('efg')
