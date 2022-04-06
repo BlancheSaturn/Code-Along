@@ -127,11 +127,20 @@ calculatePuppyAge(7);
 // const inputText = "xyz"
 // const key = 2
 
-const caesarEncryptor = (inputText, key) => {
-    const alphabet = ['a','b','c','d','e','f','g','h','i','j','k',
-    'l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',]
-    const cipher = (inputText - key);
-    console.log(cipher)
-// Maybe I have to use for loop to iterate between the letters
+// const caesarEncryptor = (text, key) => {
+//     const alphabet = ['a','b','c','d','e','f','g','h','i','j','k',
+//     'l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',]
+//     const cipher = (text - key);
+//     console.log(cipher)
+// // Maybe I have to use for loop to iterate between the letters
+// }
+// caesarEncryptor('efg')
+
+for (let index = 0; index < 5; index++) {
+    console.log("The number is " + index);
 }
-caesarEncryptor('efg')
+
+let names = ["Andy", "Sam", "Bex"];
+for (let index = 0; index < names.length; index++) {
+console.log(index);
+}
