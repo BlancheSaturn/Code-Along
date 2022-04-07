@@ -183,7 +183,16 @@
  * @return {boolean[]} [true, true, true]
  * 
  * 
- */
+ * 
+//  */
+
+// const booleanArrTest = [true, true, false, false, true]
+// const removeFalseValuesResult = removeFalseValues(booleanArrTest)
+// console.log(removeFalseValuesResult) 
+// // state of my program now 
+// // booleabArrTest => [.], removeFalseValuesResult => ??,  [Function removeFalseValues]
+
+
 const booleanArr =  [true, true, false, false, true];
  const removeFalseValues = booleanArr.filter((checkBoolean) => checkBoolean);
  console.log(removeFalseValues);
@@ -200,14 +209,14 @@ const booleanArr =  [true, true, false, false, true];
 
 const convertToPercentage = val => 100 * val;
 const inspect = val => { // tell you what it looks like after every interation
-    console.log(val)
-    return val
+    // console.log(val)
+    // return val
 }
 
 const numbersArr = [1, .5, .7, .25]
 const createPercentageList = numbersArr 
  .map(convertToPercentage) // name the function you declared
- .map(inspect)
+//  .map(inspect)
  .map(value => value + '%')
 console.log(createPercentageList.toString())
   
@@ -225,8 +234,25 @@ const possessionsArr = ['shoes', 'jacket', 'belt']
    });
     
     console.log(listOfPossessions);
+
+/**
+ * A function that takes an array of possessions and a name.
+ * The functions needs to create a new array with the name prefixed to each item.
+ *
+ * @param {string[]} possessionsArr ["shoes", "jacket", "belt"]
+ * @param {string} name "disco"
+ * @return {string[]} ["disco shoes", "disco jacket", "disco belt"]
+ */
+//  const namePara = 'school'
+//  const value = 'shoes'
+//  const addNameToString = (name, value) => `${name} ${value}`;
+//  const possessions = ["shoes", "jacket", "belt"]
+ 
+//  const createListOfPoessessions = (possessionsArr, name) => possessionsArr // take my possession array
+//      .map(value => addNameToString(name, value)); // do (to every element individually) add a name string to the possession string
+
   
-  
+    //  console.log();
   /**
    * Intemediate Challenges
    */
@@ -246,36 +272,42 @@ const possessionsArr = ['shoes', 'jacket', 'belt']
    *
    * @param {string} numberString - "1+2+3+4+5"
    * @return {number[]} [1, 2, 3, 4, 5]
-   */
-  
-//   export const convertStringToNumbersArray = (numberString) => {
-//     return;
-//   };
+//    */
+ const numberString  = "1+2+3+4+5"
+ const convertStringToNumbersArray = (numberString) => numberString // take my number string "1+2+3+4+5"
+    .split('+') // split divide and give me an array ["1", "2" , "3" , "4", "5"]
+    .map(value => parseInt(value))// do (to every element inidividually) convert to integer [1, 2, 3, 4, 5] 
 
-//   function createArrayOfTiers(num) {
-//     arrT= num.toString().split("")
-//   let z= []
-//   const result = arrT.reduce((acc, curr)=>{
-//   acc= acc+curr
-//   z.push(acc)
-//   return acc
 
-//   },"")
-//       return z;
-//   }
+const resultConvert = convertStringToNumbersArray ("1+2+3+4+5")
+console.log(resultConvert)
+
   
   /**
    * A function that takes a string of numbers joined with a "+" and creates a new array based on if the number is even or odd.
    * Every number in the string will need to checked.
    *
-   * @param {string} numberString - "1+2+3+4+5"
-   * @return {string[]} ['odd', 'even', 'odd', 'even', 'odd']
-   */
-  
-//   export const createOddEvenArray = (numberString) => {
-//     return;
-//   };
-  
+//    * @param {string} numberString - "1+2+3+4+5"
+//    * @return {string[]} ['odd', 'even', 'odd', 'even', 'odd']
+//    */
+
+const numberString1  = "1+2+3+4+5"
+// const checkEvenOddNumbers = value => value % 2 === 0
+const createNewEvenOddList = (numberString1) => {
+    const evenOddList  =  numberString1.split('+') // split divide and give me an array ["1", "2" , "3" , "4", "5"]
+    .map(value => parseInt(value))// do (to every element inidividually) convert to integer [1, 2, 3, 4, 5]
+    .map( value => {
+        if (value % 2 === 0) { // check which number in arrays are even or odd 
+            return 'even'
+        } 
+        else return 'odd'
+    })
+        return evenOddList
+}
+    const result1 = createNewEvenOddList ("1+2+3+4+5")
+    console.log(result1)
+
+    
   /**
    * A function that takes an array of book titles and a search term.
    * The function needs fo remove any book titles that do not include the search term.
@@ -284,10 +316,13 @@ const possessionsArr = ['shoes', 'jacket', 'belt']
    * @param {string} - searchTerm - "Google"
    * @return {string[]} - ["The Google story"]
    */
-  
-//   export const filterBooksBySearch = (booksArr, searchTerm) => {
-//     return;
-//   };
+   const booksArr = ["JavaScript: The Definitive Guide", "JavaScript: The Good Parts", "The Google story", "React for Dummies"]
+   const filterBooksBySearch = (booksArr, searchTerm) => {
+   const newBookArray =  booksArr.filter((booksArr) => booksArr.includes(searchTerm))
+   return newBookArray
+    }
+      const newResult = filterBooksBySearch(booksArr, "Google")  
+     console.log(newResult)
   
   /**
    * Advanced Challenges

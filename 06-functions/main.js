@@ -1,4 +1,19 @@
 
+// FUnctions
+// check with the string includes method if "arc"
+// is included in the string 
+// @param {String} - the string that has to be tested
+// @returns {boolean} - returns the result of the test
+
+const coffeeMachine = (option) => {
+    if (option === 1) return 'expresso'
+    else if (option === 2) return 'macchiato'
+    else return 'we dont this coffee here'
+
+}
+coffeeMachine(1)
+
+
 // const sayHello = (name) => {
 //     console.log("Hello " + name);
 //     }
