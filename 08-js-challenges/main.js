@@ -51,10 +51,18 @@ const resultMultiply = multiplyNumbers(number1, number2);
 console.log(resultMultiply);
 
 /**
- * A function that creates a a Recipe string from a given array of Ingredients.
+ * A function that creates a Recipe string from a given array of Ingredients.
  * Each ingredient will be joined with a +.
  *
  * @param {string[]} ingredientsArr ["Bacon","Lettuce","Tomato"]
  * @return {string} "Bacon+Lettuce+Tomato"
  */
+const ingredientsArr = ["Bacon","Lettuce","Tomato"]
+const createRecipeString = (ingredientsArr) => {
+    const jointRecipe = ingredientsArr.join('+')
+        return jointRecipe
+}
+    const finalRecipe = createRecipeString (ingredientsArr)
+    console.log(finalRecipe)
+ 
 
