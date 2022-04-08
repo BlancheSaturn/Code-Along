@@ -192,12 +192,49 @@
 // // state of my program now 
 // // booleabArrTest => [.], removeFalseValuesResult => ??,  [Function removeFalseValues]
 
+// FUNCTION RECAP
+// const booleanArr =  [true, true, false, false, true];
+//  const removeFalseValues = booleanArr.filter((checkBoolean) => checkBoolean);
+//  console.log(removeFalseValues);
 
-const booleanArr =  [true, true, false, false, true];
- const removeFalseValues = booleanArr.filter((checkBoolean) => checkBoolean);
- console.log(removeFalseValues);
+ //                                   (value)     => { return false }
+    //                                  input [true, true, false, false, true]
+    //                                  output []
 
- 
+    //                                   (value)     => { return true }
+    //                                  input [true, true, false, false, true]
+    //                                  output [true, true, false, false, true]
+
+    //                                   (value)     => !value
+    //                                  input [true, true, false, false, true]
+    //                                  output [false, false]
+
+    //                                   (value)     => typeof value === 'boolean'
+    //                                  input [true, true, false, false, true]
+    //                                  output [true, true, false, false, true]
+
+    //                                   (value)     => typeof value === 'string'
+    //                                  input [true, true, false, false, true]
+    //                                  output []
+
+    //                                   (value, iter) => iter < 3
+    //                                  input [true, true, false, false, true]
+    //                                  output [true, true, false]
+
+ const booleanArr =  [true, true, false, false, true];
+ const removeFalseValues = (booleanArr) => {
+    const resultArray = booleanArr.filter((value) => {return value});
+    return resultArray;
+ }
+ const finalResult = removeFalseValues (booleanArr)
+ console.log(finalResult);
+
+
+ // All functions in the form of general function
+// Syntex
+//  const namefn = (parameter1, ...) => {
+//      return
+//  }
   
   /**
    * A function that takes an array of numbers that are between 0 - 1.
@@ -243,16 +280,19 @@ const possessionsArr = ['shoes', 'jacket', 'belt']
  * @param {string} name "disco"
  * @return {string[]} ["disco shoes", "disco jacket", "disco belt"]
  */
-//  const namePara = 'school'
-//  const value = 'shoes'
-//  const addNameToString = (name, value) => `${name} ${value}`;
-//  const possessions = ["shoes", "jacket", "belt"]
+ const namePara = 'school'
+ const value = 'shoes'
+ const addNameToString = (name, value) => `${name} ${value}`;
+ const possessions = ["shoes", "jacket", "belt"]
  
-//  const createListOfPoessessions = (possessionsArr, name) => possessionsArr // take my possession array
-//      .map(value => addNameToString(name, value)); // do (to every element individually) add a name string to the possession string
-
-  
-    //  console.log();
+ const createListOfPoessessions = (possessionsArr, name) => { // take my possession array
+ const possessionResult = possessionsArr.map(value => addNameToString(name, value)); // do (to every element individually) add a name string to the possession string
+ return possessionResult
+ 
+ }
+ const result3 = createListOfPoessessions(possessionsArr, namePara)
+ console.log(result3)
+     
   /**
    * Intemediate Challenges
    */
@@ -274,11 +314,11 @@ const possessionsArr = ['shoes', 'jacket', 'belt']
    * @return {number[]} [1, 2, 3, 4, 5]
 //    */
  const numberString  = "1+2+3+4+5"
- const convertStringToNumbersArray = (numberString) => numberString // take my number string "1+2+3+4+5"
-    .split('+') // split divide and give me an array ["1", "2" , "3" , "4", "5"]
-    .map(value => parseInt(value))// do (to every element inidividually) convert to integer [1, 2, 3, 4, 5] 
-
-
+ const convertStringToNumbersArray = (numberString) => { // take my number string "1+2+3+4+5"
+    const splittedStringArray = numberString.split('+') // split divide and give me an array ["1", "2" , "3" , "4", "5"]
+    const integrArray = splittedStringArray.map(value => {return parseInt(value)})// do (to every element inidividually) convert to integer [1, 2, 3, 4, 5] 
+    return integrArray
+ }
 const resultConvert = convertStringToNumbersArray ("1+2+3+4+5")
 console.log(resultConvert)
 
@@ -307,6 +347,19 @@ const createNewEvenOddList = (numberString1) => {
     const result1 = createNewEvenOddList ("1+2+3+4+5")
     console.log(result1)
 
+    const createNewEvenOddList1 = (numberString2) => {
+        const splittedStringArray  =  numberString2.split('+') 
+        const oddEvenArray = splittedStringArray.map( value => {
+            if (value % 2 === 0) {  
+                return 'even'
+            } 
+            else return 'odd'
+        })
+            return evenOddList
+    }
+        const result4 = createNewEvenOddList ("1+2+3+4+5")
+        console.log(result4)
+
     
   /**
    * A function that takes an array of book titles and a search term.
@@ -318,9 +371,14 @@ const createNewEvenOddList = (numberString1) => {
    */
    const booksArr = ["JavaScript: The Definitive Guide", "JavaScript: The Good Parts", "The Google story", "React for Dummies"]
    const filterBooksBySearch = (booksArr, searchTerm) => {
-   const newBookArray =  booksArr.filter((booksArr) => booksArr.includes(searchTerm))
-   return newBookArray
-    }
+   const newBookArray =  booksArr.filter((book) => {
+   const test  = book.includes(searchTerm)
+   return test
+    })
+
+    return newBookArray
+
+}
       const newResult = filterBooksBySearch(booksArr, "Google")  
      console.log(newResult)
   
@@ -340,13 +398,14 @@ const createNewEvenOddList = (numberString1) => {
    * @return {string} "disco+shoes"
    */
   
-//   export const formatStringArray = (stringArr) => {
-//     const cleanedArr = stringArr.forEach((string) => {
+//   ForEach is not good to have an output, should use map
+//     const formatStringArray = (stringArr) => {
+//     const cleanedArr = stringArr.map((string) => {
 //       const cleanStr = string.trim().toLowerCase();
 //       return cleanStr;
 //     });
   
-    // console.log(???)
+//     console.log(???)
   
 //     const joinedString = cleanedArr.join("+");
   

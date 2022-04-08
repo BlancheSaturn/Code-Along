@@ -124,13 +124,14 @@ const createPercentageList = (numbersArr) => {
 
 const result1 = createPercentageList([1, .5, .7, .25])
 
-const multiplyBy100 = value => 100 * value;
-const addPercentSign = percentage => `${percentage}%`;
+const multiplyBy100 = value => {return 100 * value};
+const addPercentSign = percentage => {return`${percentage}%`};
 
-const createPercentageListBeautified = (numbersArr) => numbersArr // take my numbers array [1, .5, .7, .25]
-    .map(multiplyBy100) // do (to every element individually) a multiply by 100 [100, 50, 70, 25]
-    .map(addPercentSign); // do (..) add a percent sign ["100%", "50%", "70%", "25%"]
-
+const createPercentageListBeautified = (numbersArr) => {     // take my numbers array [1, .5, .7, .25]
+    const percentArray = numbersArr.map(multiplyBy100) // do (to every element individually) a multiply by 100 [100, 50, 70, 25]
+    const formattedArray = numbersArr.map(addPercentSign); // do (..) add a percent sign ["100%", "50%", "70%", "25%"]
+    return formattedArray
+}
 const result2 = createPercentageList([1, .5, .7, .25])
 
 /**
@@ -146,12 +147,17 @@ const value = 'shoes'
 const addNameToString = (name, value) => `${name} ${value}`;
 const possessions = ["shoes", "jacket", "belt"]
 
-const createListOfPoessessions = (possessionsArr, name) => possessionsArr // take my possession array
-    .map(value => addNameToString(name, value)); // do (to every element individually) add a name string to the possession string
+const createListOfPoessessions = (possessionsArr, name) => { // take my possession array
+const possessionResult = possessionsArr.map(value => addNameToString(name, value)); // do (to every element individually) add a name string to the possession string
+return possessionResult
 
-  /**
-   * Intemediate Challenges
-   */
+}
+const result3 = createListOfPoessessions(possessionsArr)
+console.log(result3
+    
+    
+//    * Intemediate Challenges
+//    */
   
   /**
    * Have a look at the String method split()
