@@ -66,3 +66,32 @@ const createRecipeString = (ingredientsArr) => {
     console.log(finalRecipe)
  
 
+/**
+ * A function that takes Array of Items and returns a NEW ARRAY with the first and last item in it.
+ *
+ * @param {string[]} itemsArr ["Tony","John","Dave"]
+ * @return {string[]} ["Tony","Dave"]
+ */
+const itemsArr = ["Tony","John","Dave"]
+    const getFirstAndLastItems = (itemsArr) => {
+    const removeName = itemsArr.splice(1,1) // Array.slice() returns selected array elements as a new array
+    return itemsArr // after I've remove element with index 1, I returned the remaining element in a new array 
+    }
+
+  const finalArr = getFirstAndLastItems (itemsArr)
+  console.log(finalArr)
+  /*
+   * A function that takes an array of scores and totals the scores by looping through the array.
+   *
+   * @param {number[]} scoreArr [1,2,3]
+   * @return {number} 6
+   */
+const scoreArr = [1,2,3]
+    const totalScores = (scoreArr) => {
+    const sumofArray = scoreArr.reduce((accumulatingSum, numberToAdd) => {
+    return accumulatingSum + numberToAdd
+   })
+    return sumofArray
+}
+const sum = totalScores (scoreArr)
+console.log(sum)
