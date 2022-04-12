@@ -1,0 +1,71 @@
+@use "_base.scss" as *;
+
+.calculator-result {
+  width: 100%;
+  font-size: 5rem;
+  height: 80px;
+  border: none;
+  background-color: $color-black;
+  color: $color-white;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+.calculator__buttons {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  padding: 20px;
+}
+
+button {
+  height: 60px;
+  background-color: $color-white;
+  border-radius: 3px;
+  border: 1px solid #c4c4c4;
+  background-color: transparent;
+  font-size: 2rem;
+  color: #333;
+}
+
+button:hover {
+  background-color: #eaeaea;
+}
+
+.calculator__sign {
+  color: #337cac;
+}
+
+.calculator__all-clear {
+  background-color: #f0595f;
+  border-color: #b0353a;
+  color: #fff;
+}
+
+.calculator__all-clear:hover {
+  background-color: #f17377;
+}
+
+.equal-sign {
+  background-color: $color-primary;
+  border-color: $color-primary-light;
+  color: #fff;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  height: 100%;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.equal-sign:hover {
+    background-color: #4e9ed4;
+  }
+  
+// grid-row: 2 / 6;
+// grid-column: 4 / 5;
+// OR 
+// grid-area: 2 / 4 / 6 / 5;
+
