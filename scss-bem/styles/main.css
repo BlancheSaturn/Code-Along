@@ -12,6 +12,11 @@ a:visited {
   text-decoration: none;
 }
 
+.active {
+  background-color: green;
+  color: red;
+}
+
 .logo {
   font-family: "Dancing Script", sans-serif;
   font-size: 20px;
@@ -74,7 +79,6 @@ a:visited {
 .form .form__input {
   margin-bottom: 20px;
   height: auto;
-  cursor: pointer;
   border-radius: 4px;
   width: 100%;
   padding: 10px 15px;

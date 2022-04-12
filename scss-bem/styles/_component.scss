@@ -1,6 +1,10 @@
 @use "_base.scss" as *;
 
 // COMPONENTS -> INDIVIDUAL ITEMS / ELEMENTS
+.active {
+    background-color: green;
+    color: red;
+  }
 
 .logo {
     font-family: $font-display;
@@ -68,14 +72,12 @@
 .form__input {
     margin-bottom: 20px;
     height: auto;
-    cursor: pointer;
     border-radius: 4px;
     width: 100%;
     padding: 10px 15px;
 
     }
 }
-
 
 .end {
     display: flex;
@@ -89,3 +91,4 @@
     }
 
 } 
+
