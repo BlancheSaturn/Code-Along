@@ -6,34 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <!-- linked external css file which holds my calculator styles -->
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
     <section>
+        <!-- /container that will hold the calculator -->
         <div class="calculator">
-            <input type="text" class="calculator-result" value="0" disabled />
-                <div class="calculator__buttons">
-                    <button class="calculator__sign" value="+">+</button>
-                    <button class="calculator__sign" value="-">-</button>
-                    <button class="calculator__sign" value="*">&times;</button>
-                    <button class="calculator__sign" value="/">&divide;</button>
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>0</button>
-                    <button class="calculator__decimal">.</button>
-                    <button class="calculator__all-clear">AC</button>
-                    <button class="equal-sign">=</button>
-                </div>
+            <!-- input text field that is diabled, it will show the calculated results -->
+            <input type="text" class="calculator-result" id="displayResult" value="0" disabled />
+            <!-- holds the calculator's buttons, this is where I will add the grid properties -->
+            <div class="calculator__buttons">
+                <button class="calculator__sign">+</button> 
+                <button class="calculator__sign">-</button>
+                <button class="calculator__sign">&times;</button>
+                <button class="calculator__sign" >&divide;</button>
+
+                <button type="button" class="percent">%</button>
+                <button type="button" class="plus-minus">+/-</button>
+                <button type="button" class="square-root">√x</button>
+            
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+               
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+
+                <button>0</button>
+                <button class="calculator__decimal">.</button>
+                <button class="calculator__all-clear">AC</button>
+                <button class="equal-sign">=</button>
+            </div>
         </div>
     </section>
+    <!-- linked external js script, which hold my js code -->
     <script src="main.js"></script>
 </body>
 

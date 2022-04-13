@@ -11,7 +11,7 @@
   font-size: 5rem;
   height: 80px;
   border: none;
-  background-color: #333333;
+  background-color: rgb(19, 18, 18);
   color: #fafafa;
   text-align: right;
   padding-right: 20px;
@@ -29,25 +29,25 @@
 
 button {
   height: 60px;
-  background-color: #fafafa;
-  border-radius: 3px;
+  border-radius: 50%;
   border: 1px solid #c4c4c4;
-  background-color: transparent;
+  background-color: rgb(29, 27, 27);
   font-size: 2rem;
-  color: #333;
+  color: #fafafa;
 }
 
 button:hover {
-  background-color: #eaeaea;
+  background-color: #55a5f0;
 }
 
 .calculator__sign {
-  color: #337cac;
+  color: #333333;
+  background-color: rgb(165, 160, 160);
 }
 
 .calculator__all-clear {
-  background-color: #f0595f;
-  border-color: #b0353a;
+  background-color: #28527a;
+  border-color: #55a5f0;
   color: #fff;
 }
 
@@ -56,17 +56,45 @@ button:hover {
 }
 
 .equal-sign {
-  background-color: #28527a;
+  background-color: rgb(221, 172, 80);
   border-color: #55a5f0;
   color: #fff;
+  border-radius: 20px;
   grid-row-start: 2;
-  grid-row-end: 6;
+  grid-row-end: 7;
   height: 100%;
   grid-column-start: 4;
   grid-column-end: 5;
 }
 
 .equal-sign:hover {
+  background-color: #4e9ed4;
+}
+
+.percent {
+  background-color: rgb(221, 172, 80);
+  color: #fff;
+}
+
+.percent:hover {
+  background-color: #4e9ed4;
+}
+
+.plus-minus {
+  background-color: rgb(221, 172, 80);
+  color: #fff;
+}
+
+.plus-minus:hover {
+  background-color: #4e9ed4;
+}
+
+.square-root {
+  background-color: rgb(221, 172, 80);
+  color: #fff;
+}
+
+.square-root:hover {
   background-color: #4e9ed4;
 }
 
@@ -88,8 +116,8 @@ body {
   border: 1px solid rgb(140, 92, 92);
   border-radius: 5px;
   width: 600px;
-  height: 500px;
+  height: 600px;
   margin: 10vh auto 0 auto;
   box-shadow: 0px 0px 43px 17px rgb(153, 153, 153);
-  background-color: #fafafa;
+  background-color: #333333;
 }/*# sourceMappingURL=main.css.map */
