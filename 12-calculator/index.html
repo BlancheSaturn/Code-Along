@@ -15,34 +15,34 @@
         <!-- /container that will hold the calculator -->
         <div class="calculator">
             <!-- input text field that is diabled, it will show the calculated results -->
-            <input type="text" class="calculator-result" id="displayResult" value="0" disabled />
+            <input type="text" class="calculator-result" id="displayResult" value="" disabled />
             <!-- holds the calculator's buttons, this is where I will add the grid properties -->
             <div class="calculator__buttons">
-                <button class="calculator__sign">+</button> 
-                <button class="calculator__sign">-</button>
-                <button class="calculator__sign">&times;</button>
-                <button class="calculator__sign" >&divide;</button>
+                <button type="button" class="calculator__operator" value="+">+</button> 
+                <button type="button" class="calculator__operator" value="-">-</button>
+                <button type="button" class="calculator__operator" value="*">&times;</button>
+                <button type="button" class="calculator__operator" value="/" >&divide;</button>
 
-                <button type="button" class="percent">%</button>
-                <button type="button" class="plus-minus">+/-</button>
-                <button type="button" class="square-root">√x</button>
+                <button type="button" class="calculator__percent" value="%">%</button>
+                <button type="button" class="calculator__plus-minus" value="+/-">+/-</button>
+                <button type="button" class="calculator__square-root" value="√x">√x</button>
             
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
+                <button type="button" class="calculator__digit" value="7">7</button>
+                <button type="button" class="calculator__digit" value="8">8</button>
+                <button type="button" class="calculator__digit" value="9">9</button>
                
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
+                <button type="button" class="calculator__digit" value="4">4</button>
+                <button type="button" class="calculator__digit" value="5">5</button>
+                <button type="button" class="calculator__digit" value="6">6</button>
 
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
+                <button type="button" class="calculator__digit" value="1">1</button>
+                <button type="button" class="calculator__digit" value="2">2</button>
+                <button type="button" class="calculator__digit" value="3">3</button>
 
-                <button>0</button>
-                <button class="calculator__decimal">.</button>
-                <button class="calculator__all-clear">AC</button>
-                <button class="equal-sign">=</button>
+                <button type="button" class="calculator__digit" value="0">0</button>
+                <button type="button" class="calculator__decimal" value=".">.</button>
+                <button type="button" class="calculator__all-clear" value="AC">AC</button>
+                <button type="button" class="equal-sign" value="=">=</button>
             </div>
         </div>
     </section>

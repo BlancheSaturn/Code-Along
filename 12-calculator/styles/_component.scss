@@ -12,9 +12,10 @@
   padding-left: 10px;
 }
 // grid container that hold the grid items i.e the buttons
-.calculator__buttons{
+.calculator__buttons {
   display: grid;
   justify-content: center;
+// for desktop
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-row-gap: 20px;
   grid-column-gap: 20px;
@@ -35,12 +36,12 @@ button:hover {
 }
 
 .calculator__sign {
-  color:$color-black;
+  color: $color-black;
   background-color: rgb(165, 160, 160);
 }
 
 .calculator__all-clear {
-  background-color:$color-primary;
+  background-color: $color-primary;
   border-color: $color-primary-light;
   color: #fff;
 }
@@ -53,13 +54,13 @@ button:hover {
   background-color: rgb(221, 172, 80);
   border-color: $color-primary-light;
   color: #fff;
-  border-radius:20px;
-//   move the equal button to row 2 and make it end at row 7
-  grid-row-start: 2; 
+  border-radius: 20px;
+  //   move the equal button to row 2 and make it end at row 7
+  grid-row-start: 2;
   grid-row-end: 7;
-//   added height to the equal button for it to fill up from row 2-7
+  //   added height to the equal button for it to fill up from row 2-7
   height: 100%;
-//   move the equal button to 
+  //   move the equal button to
   grid-column-start: 4;
   grid-column-end: 5;
 }
@@ -74,28 +75,35 @@ button:hover {
 }
 
 .percent {
-    background-color: rgb(221, 172, 80);
-    color: #fff;
+  background-color: rgb(221, 172, 80);
+  color: #fff;
 }
 .percent:hover {
-    background-color: #4e9ed4;
+  background-color: #4e9ed4;
 }
 .plus-minus {
-    background-color: rgb(221, 172, 80);
-    color: #fff;
+  background-color: rgb(221, 172, 80);
+  color: #fff;
 }
 .plus-minus:hover {
-    background-color: #4e9ed4;
+  background-color: #4e9ed4;
 }
 
 .square-root {
-    background-color: rgb(221, 172, 80);
-    color: #fff;
+  background-color: rgb(221, 172, 80);
+  color: #fff;
 }
 .square-root:hover {
-    background-color: #4e9ed4;
+  background-color: #4e9ed4;
 }
-
-
-
-
+// for mobile phones
+@media screen and (max-width: 768px) {
+  section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 550px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+}
