@@ -29,11 +29,12 @@
 
 button {
   height: 60px;
-  border-radius: 50%;
+  border-radius: 0.5%;
   border: 1px solid #c4c4c4;
   background-color: rgb(29, 27, 27);
   font-size: 2rem;
   color: #fafafa;
+  cursor: pointer;
 }
 
 button:hover {
@@ -59,7 +60,7 @@ button:hover {
   background-color: rgb(221, 172, 80);
   border-color: #55a5f0;
   color: #fff;
-  border-radius: 20px;
+  border-radius: 0.5px;
   grid-row-start: 2;
   grid-row-end: 7;
   height: 100%;
