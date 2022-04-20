@@ -36,12 +36,14 @@ updateResult();
 // the querySelector() returns the first element that matches a CSS selector
 const keys = document.querySelector(".calculator__buttons");
 keys.addEventListener("click", (event) => {
+  // keys.innerHTML = 'Clicked'
   // accessing the clicked element
   const target = event.target;
   // Looking to see  if the clicked element is a button.
   // If it not a button, exit from the function
   if (!target.matches("button")) {
     return;
+    
   }
 
   //  Using classList.contains to returns true if the calculator click contains the button we're listening for, otherwise false
@@ -143,7 +145,7 @@ const controlOperator = (nextOperator) => {
     const calculation = calculateResult(previousOperand, keyInValue, operator);
     // The sum is  shown by updating the showValue property.
     calculator.showValue = String(calculation);
-    // The value of previousOperand is updated to the result so that it may be used in the next calculator.
+    // The value of previousOperand is updated to the result so that it may be used in the next calculation.
     calculator.previousOperand = calculation;
   }
   calculator.checkingForCurrentOperand = true;
